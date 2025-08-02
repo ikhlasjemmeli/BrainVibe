@@ -1,0 +1,17 @@
+C:\Users\ikhla\OneDrive\Bureau\flutter\brainvibe.api\Brainvibe.EF\bin\Release\net7.0\Brainvibe.EF.deps.json
+C:\Users\ikhla\OneDrive\Bureau\flutter\brainvibe.api\Brainvibe.EF\bin\Release\net7.0\Brainvibe.EF.runtimeconfig.json
+C:\Users\ikhla\OneDrive\Bureau\flutter\brainvibe.api\Brainvibe.EF\bin\Release\net7.0\Brainvibe.EF.dll
+C:\Users\ikhla\OneDrive\Bureau\flutter\brainvibe.api\Brainvibe.EF\bin\Release\net7.0\Brainvibe.EF.pdb
+C:\Users\ikhla\OneDrive\Bureau\flutter\brainvibe.api\Brainvibe.EF\bin\Release\net7.0\Brainvibe.Core.dll
+C:\Users\ikhla\OneDrive\Bureau\flutter\brainvibe.api\Brainvibe.EF\bin\Release\net7.0\Brainvibe.Core.pdb
+C:\Users\ikhla\OneDrive\Bureau\flutter\brainvibe.api\Brainvibe.EF\obj\Release\net7.0\Brainvibe.EF.csproj.AssemblyReference.cache
+C:\Users\ikhla\OneDrive\Bureau\flutter\brainvibe.api\Brainvibe.EF\obj\Release\net7.0\Brainvibe.EF.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ikhla\OneDrive\Bureau\flutter\brainvibe.api\Brainvibe.EF\obj\Release\net7.0\Brainvibe.EF.AssemblyInfoInputs.cache
+C:\Users\ikhla\OneDrive\Bureau\flutter\brainvibe.api\Brainvibe.EF\obj\Release\net7.0\Brainvibe.EF.AssemblyInfo.cs
+C:\Users\ikhla\OneDrive\Bureau\flutter\brainvibe.api\Brainvibe.EF\obj\Release\net7.0\Brainvibe.EF.csproj.CoreCompileInputs.cache
+C:\Users\ikhla\OneDrive\Bureau\flutter\brainvibe.api\Brainvibe.EF\obj\Release\net7.0\Brainvibe.EF.csproj.CopyComplete
+C:\Users\ikhla\OneDrive\Bureau\flutter\brainvibe.api\Brainvibe.EF\obj\Release\net7.0\Brainvibe.EF.dll
+C:\Users\ikhla\OneDrive\Bureau\flutter\brainvibe.api\Brainvibe.EF\obj\Release\net7.0\refint\Brainvibe.EF.dll
+C:\Users\ikhla\OneDrive\Bureau\flutter\brainvibe.api\Brainvibe.EF\obj\Release\net7.0\Brainvibe.EF.pdb
+C:\Users\ikhla\OneDrive\Bureau\flutter\brainvibe.api\Brainvibe.EF\obj\Release\net7.0\Brainvibe.EF.genruntimeconfig.cache
+C:\Users\ikhla\OneDrive\Bureau\flutter\brainvibe.api\Brainvibe.EF\obj\Release\net7.0\ref\Brainvibe.EF.dll
