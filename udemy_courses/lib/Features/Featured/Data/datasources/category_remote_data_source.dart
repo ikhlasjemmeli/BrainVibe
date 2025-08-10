@@ -10,7 +10,7 @@ abstract class CategoryRemoteDataSource {
 
 class CategoryRemoteDataSourceImpl implements CategoryRemoteDataSource {
   final Dio client;
-
+  final baseUrl = dotenv.env['BASE_URL'];
   CategoryRemoteDataSourceImpl(this.client);
 
 
@@ -18,19 +18,16 @@ class CategoryRemoteDataSourceImpl implements CategoryRemoteDataSource {
   @override
   Future<List<Category>> getCategoriesFromApi() async {
 
-    final baseUrl = dotenv.env['BASE_URL'];
-
-    final url = Uri.parse('$baseUrl/api/Category');
-    final response = await http.get(url);
+    final response = await client.get('$baseUrl/api/Category');
 
     print("response : ${response.statusCode}");
     if (response.statusCode == 200) {
 
-      List<dynamic> l = jsonDecode(response.body);
+      List<dynamic> l = jsonDecode(response.data);
       List<Category> list = [];
       for (var element in l) {
         list.add(CategoryModel.fromJson(element) as Category);
-        print("element : ${element}");
+      
       }
       return list;
 

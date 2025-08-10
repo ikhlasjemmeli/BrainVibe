@@ -9,6 +9,7 @@ namespace Brainvibe.Core.interfaces
     public interface IUnitOfWork :IDisposable
     {
         ICategoryRepository Categories { get; }
+        IUserRepository Users { get; }
         Task<int> CompleteAsync();
     }
 }

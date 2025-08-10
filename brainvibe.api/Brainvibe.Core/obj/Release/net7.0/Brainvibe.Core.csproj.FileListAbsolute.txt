@@ -10,3 +10,15 @@ C:\Users\ikhla\OneDrive\Bureau\flutter\brainvibe.api\Brainvibe.Core\obj\Release\
 C:\Users\ikhla\OneDrive\Bureau\flutter\brainvibe.api\Brainvibe.Core\obj\Release\net7.0\refint\Brainvibe.Core.dll
 C:\Users\ikhla\OneDrive\Bureau\flutter\brainvibe.api\Brainvibe.Core\obj\Release\net7.0\Brainvibe.Core.pdb
 C:\Users\ikhla\OneDrive\Bureau\flutter\brainvibe.api\Brainvibe.Core\obj\Release\net7.0\ref\Brainvibe.Core.dll
+C:\Users\ikhla\OneDrive\Bureau\flutter\brainvibe\brainvibe.api\Brainvibe.Core\bin\Release\net7.0\Brainvibe.Core.deps.json
+C:\Users\ikhla\OneDrive\Bureau\flutter\brainvibe\brainvibe.api\Brainvibe.Core\bin\Release\net7.0\Brainvibe.Core.dll
+C:\Users\ikhla\OneDrive\Bureau\flutter\brainvibe\brainvibe.api\Brainvibe.Core\bin\Release\net7.0\Brainvibe.Core.pdb
+C:\Users\ikhla\OneDrive\Bureau\flutter\brainvibe\brainvibe.api\Brainvibe.Core\obj\Release\net7.0\Brainvibe.Core.csproj.AssemblyReference.cache
+C:\Users\ikhla\OneDrive\Bureau\flutter\brainvibe\brainvibe.api\Brainvibe.Core\obj\Release\net7.0\Brainvibe.Core.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ikhla\OneDrive\Bureau\flutter\brainvibe\brainvibe.api\Brainvibe.Core\obj\Release\net7.0\Brainvibe.Core.AssemblyInfoInputs.cache
+C:\Users\ikhla\OneDrive\Bureau\flutter\brainvibe\brainvibe.api\Brainvibe.Core\obj\Release\net7.0\Brainvibe.Core.AssemblyInfo.cs
+C:\Users\ikhla\OneDrive\Bureau\flutter\brainvibe\brainvibe.api\Brainvibe.Core\obj\Release\net7.0\Brainvibe.Core.csproj.CoreCompileInputs.cache
+C:\Users\ikhla\OneDrive\Bureau\flutter\brainvibe\brainvibe.api\Brainvibe.Core\obj\Release\net7.0\Brainvibe.Core.dll
+C:\Users\ikhla\OneDrive\Bureau\flutter\brainvibe\brainvibe.api\Brainvibe.Core\obj\Release\net7.0\refint\Brainvibe.Core.dll
+C:\Users\ikhla\OneDrive\Bureau\flutter\brainvibe\brainvibe.api\Brainvibe.Core\obj\Release\net7.0\Brainvibe.Core.pdb
+C:\Users\ikhla\OneDrive\Bureau\flutter\brainvibe\brainvibe.api\Brainvibe.Core\obj\Release\net7.0\ref\Brainvibe.Core.dll

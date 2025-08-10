@@ -1,19 +1,36 @@
 import 'dart:ui';
+import 'package:Brainvibe/Core/constants.dart';
+import 'package:Brainvibe/Core/core_binding.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:dio/dio.dart';
 import 'package:flutter_dotenv/flutter_dotenv.dart';
 import 'package:Brainvibe/Features/Featured/Presentation/pages/featured_screen.dart';
 import 'package:Brainvibe/Features/Featured/Presentation/controller/category_bindings.dart';
+import 'package:shared_preferences/shared_preferences.dart';
 
+import 'Core/app_translations.dart';
+import 'Features/Settings/Presentation/Pages/Settings.dart';
+import 'Features/Settings/Presentation/Pages/change_password.dart';
+import 'Features/Settings/Presentation/Pages/language.dart';
+import 'Features/Settings/Presentation/Pages/login.dart';
+import 'Features/Settings/Presentation/Pages/register.dart';
+import 'Features/Settings/Presentation/controller/settings_bindings.dart';
+import 'package:devicelocale/devicelocale.dart';
 void main() async{
   await dotenv.load(fileName: ".env.development");
-  Get.put(Dio());
-  runApp(MyApp());
-}
+  Locale? l = await Devicelocale.currentAsLocale;
+   locale = l?.languageCode;
+  SharedPreferences _sp = await SharedPreferences.getInstance();
 
+
+  Get.put<Dio>(Dio(), permanent: true);
+  runApp(MyApp(_sp));
+}
+String? locale;
 class MyApp extends StatelessWidget {
-  const MyApp({super.key});
+  final SharedPreferences _sp;
+  const MyApp(this._sp,{super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -24,8 +41,51 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      initialBinding: CategoryBindings(),
+
+      initialBinding: BindingsBuilder(() {
+        CoreBinding().dependencies();
+        CategoryBindings().dependencies();
+
+        SettingsBindings().dependencies();
+
+
+
+      }),
       home: const EducationAppMainScreen(),
+      translations: AppTranslation(),
+
+      locale: Locale(_sp.getString(SP_PREFS_LANGUAGE) ?? 'fr'),
+      fallbackLocale: const Locale("fr"),
+      getPages: [
+        GetPage(
+          name: ROUTE_LOGIN_PAGE,
+          page: () => LoginScreen(),
+          bindings: [CoreBinding(),SettingsBindings()],
+        ),
+        GetPage(
+          name: ROUTE_REGISTER_PAGE,
+          page: () =>  RegisterScreen(),
+          bindings: [CoreBinding(),SettingsBindings(),],
+        ),
+        GetPage(
+          name: ROUTE_SETTINGS_PAGE,
+          page: () =>  SettingsScreen(),
+          bindings: [CoreBinding(),SettingsBindings()],
+        ),
+        GetPage(
+          name: ROUTE_LANGUAGE_PAGE,
+          page: () =>  LanguageSelectionScreen(),
+          bindings: [],
+        ),
+        GetPage(
+          name: ROUTE_CHANGE_PASSWORD_PAGE,
+          page: () =>  ChangePasswordScreen(),
+          bindings: [],
+        ),
+
+
+
+      ],
     );
   }
 }
@@ -46,7 +106,8 @@ class _EducationAppScreenState extends State<EducationAppMainScreen> {
     FeaturedScreen(),
     Scaffold(body: Center(child: Text("Learning"))),
     Scaffold(body: Center(child: Text("Wishlist"))),
-    Scaffold(body: Center(child: Text("Settings"))),
+    SettingsScreen()
+
   ];
 
   @override
